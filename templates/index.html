@@ -1,0 +1,44 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <title>Home Automation System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+
+<body>
+    
+    <div id="header">
+    {{geo[1].city}} is at {{geo[0].temp}} ⁰C. <br> 
+    <div id="prediction">Predicted {{geo[0].text.lower()}} today.</div> 
+    </div>
+    <div id="logodiv"><img src="/static/img/logo.png" id="logo"></div>
+    <table id="buttons">
+        <tr class="b">
+            <td class="bt"><a class="waves-effect waves-light btn black btc">FAN</a></td>
+            <td class="bt"><a class="waves-effect waves-light btn black btc">CURTAIN</a></td>
+        </tr>
+        <tr class="b">
+            <td class="bt"><a class="waves-effect waves-light btn black btc">BED ROOM LIGHT</a></td>
+            <td class="bt"><a class="waves-effect waves-light btn black btc">LIVING ROOM LIGHT</a></td>
+        </tr>
+        <tr class="b">
+            <td class="bt"><a class="waves-effect waves-light btn black btc">DOOR CAMERA</a></td>
+            <td class="bt"><a class="waves-effect waves-light btn black btc">LOGS</a></td>
+        </tr>
+        <tr class="b">
+                <td class="bt" colspan="2"><a class="waves-effect waves-light btn green btc fam">FAMILY TIME</a></td>
+        </tr>
+    </table>  
+
+<footer id="footer">
+        Made with <i class="fa fa-heart" aria-hidden="true" style="color:red"></i> by VAD.        
+</footer>
+</body>
+
+</html>
